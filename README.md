@@ -3,6 +3,8 @@ Source Player is a full functional GPU accelerated video player.
 
 It supports almost all common video types and playback functionality. Playing video with Source Player is smooth and enjoyable.
 
+![Source Player Icon](https://circleapps.co/img/logo.png)
+
 Furthermore, it provides many useful functionalities for English study, such as:
 
 * View definition in popup dictionary
