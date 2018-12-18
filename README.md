@@ -1,9 +1,6 @@
-
-Source Player is a video player for English learner. 
-
-It supports almost all common video types and playback functionality.
-
 ![Source Player](https://circleapps.co/img/screenshots/popup_big.png)
+
+Source Player is a video player for English learner. It supports almost all common video types and playback functionality.
 
 What makes it unique is its dedicated features for English study, such as:
 
