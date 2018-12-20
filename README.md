@@ -4,15 +4,14 @@ Source Player is a video player for English learner. It supports almost all comm
 
 What makes it unique is its dedicated features for English study, such as:
 
-* View definition in popup dictionary
+* View definition in pop-up dictionary
 * Drag and select to loop lines
-* Automatically download subtitles
 * Highly configurable web dictionaries
 * YouTube player and browser 
-* Save word to word book 
-* Hide hardcoded subtitle 
+* Collect word to word book and word list
+* Blur out hardcoded subtitle 
 * Automatically hide subtitle 
-* Change playback speed 
+* Automatically download subtitles
  
 
 See https://circleapps.co/ for more about this product.
