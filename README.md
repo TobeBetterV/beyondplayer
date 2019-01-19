@@ -15,3 +15,7 @@ What makes it unique is its dedicated features for English study, such as:
  
 
 See https://circleapps.co/ for more about this product.
+
+------
+
+[Open Source Software Attribution](https://github.com/circleapps/sourceplayer/wiki/Open-Source-Software-Attribution)
