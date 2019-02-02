@@ -15,7 +15,7 @@ What makes it unique is its dedicated features for English study, such as:
 * Automatically download subtitles
  
 
-See https://circleapps.co/ for more about this product.
+See [Source Player Wiki](https://github.com/circleapps/sourceplayer/wiki) or [Product Page](https://circleapps.co/) for more about this app.
 
 ------
 
