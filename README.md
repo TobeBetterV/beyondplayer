@@ -1,4 +1,4 @@
-![Source Player](https://circleapps.co/img/screenshots/popup_big.png)
+![Source Player](https://github.com/circleapps/sourceplayer/blob/master/popup_big.png)
 
 
 Source Player is a video player for English learner. It supports almost all common video types and playback functionalities.
