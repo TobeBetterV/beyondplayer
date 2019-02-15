@@ -26,7 +26,7 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 ## 1.2.5
 
 1. Restored macOS 10.11 support
-2. Added Word count for word list
+2. Added word count for word list
 3. Fixed a bug of displaying sentences related to a word
 
 ## 1.2.4
