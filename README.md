@@ -19,9 +19,7 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 
 ------
 
-[Open Source Software Attribution](https://github.com/circleapps/sourceplayer/wiki/Open-Source-Software-Attribution)
 
------
 
 # Release Notes
 
@@ -51,3 +49,9 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 1. Add back "recently files" in application menu
 2. Drop support for macOS 10.10 due to the limitation of third-party component
 3. Drop support for macOS 10.11 due to the limitation of third-party component, may add it back once we find a solution
+
+-----
+
+Source Player is based on [mpv.js](https://github.com/Kagami/mpv.js/) and [Electron](https://electronjs.org/), for complete open source softwares used by this app, see
+[Open Source Software Attribution](https://github.com/circleapps/sourceplayer/wiki/Open-Source-Software-Attribution)
+
