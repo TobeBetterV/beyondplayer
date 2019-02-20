@@ -52,6 +52,9 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 
 -----
 
+
+# License
+
 Source Player is based on [mpv.js](https://github.com/Kagami/mpv.js/) and [Electron](https://electronjs.org/), for complete open source softwares used by this app, see
 [Open Source Software Attribution](https://github.com/circleapps/sourceplayer/wiki/Open-Source-Software-Attribution)
 
