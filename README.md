@@ -23,6 +23,15 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 
 # Release Notes
 
+## 1.2.7
+
+1. Added support to allow changing subtitle language in YouTube player.
+2. Added support for second subtitle in YouTube player.
+3. Fixed an issue where after the application window is maximized then restored, some buttons in the side panel are not clickable.
+4. Improve the default YouTube playback method, all videos can be opened successfully. The Google video stream playback method is dropped, since it is not needed anymore.
+5. Fixed an issue where Russian and Korean subtitles are not properly displayed.
+6. Fixed a few usability issues.
+
 ## 1.2.5
 
 1. Restored macOS 10.11 support
