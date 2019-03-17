@@ -23,6 +23,11 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 
 # Release Notes
 
+## 1.2.9 and 1.2.8
+
+1. Fixed an issue where subtitle does not get updated when application window is not focused.
+2. Fixed a subtitle display issue for YouTube player when network is slow.
+
 ## 1.2.7
 
 1. Added support to allow changing subtitle language in YouTube player.
