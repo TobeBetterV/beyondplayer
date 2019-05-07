@@ -23,6 +23,15 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 
 # Release Notes
 
+## 1.3.0
+
+1. Automatic word notification by annotating word with the definition from local or web dictionary.
+2. More convenient way to select text in the subtitle at the bottom of video player.
+3. After downloading the first subtitle, the remain subtitles will be downloaded in background.
+4. Add keyboard shortcuts to change loop range.
+5. Minor UI changes and improvements.
+6. Bugfix.
+
 ## 1.2.9 and 1.2.8
 
 1. Fixed an issue where subtitle does not get updated when application window is not focused.
