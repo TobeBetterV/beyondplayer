@@ -1,12 +1,13 @@
-![Source Player](https://circleapps.co/img/screenshots/popup_small.png)
+![BeyondPlayer](https://circleapps.co/img/screenshots/popup.png)
 
 
-Source Player is a video player for English learner. It supports almost all common video types and playback functionalities.
+BeyondPlayer (originally called Source Player) is a video player for English learner. It supports almost all common video types and playback functionalities.
 
 What makes it unique is its dedicated features for English study, such as:
 
 * View definition in pop-up dictionary
 * Drag and select to loop lines
+* Save video clip to clip library
 * Highly configurable web dictionaries
 * YouTube player and browser 
 * Collect word to word book and word list
@@ -22,6 +23,15 @@ See [Product Page](https://circleapps.co/) or [Source Player Wiki](https://githu
 
 
 # Release Notes
+
+## 2.0.0
+
+1. Changed app name from “Source Player” to BeyondPlayer Pro, changed app icon.
+2. Added Chinese localizations.
+3. Added clip library. You can extract video clip with lines from movie to clip library.
+4. Small user interface refinements.
+5. Bugfix.
+6. Added video tutorial in help menu.
 
 ## 1.3.0
 
