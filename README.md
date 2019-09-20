@@ -24,6 +24,16 @@ See [Product Page](https://circleapps.co/) or [BeyondPlayer Wiki](https://github
 
 # Release Notes
 
+## 2.1.2
+
+1. Export/Import Word Book.
+2. Export/Import Clip Library.
+3. Added tag cloud panel to display all tags in Clip Library.
+4. Show video clip count.
+5. Keyboard shortcuts to switch between web dictionaries: Ctrl+1, Ctrl+2, Ctrl+3...
+6. Keyboard shortcut to create new video clip by the last used tags: Cmd+Shift+K.
+7. Options to adjust subtitle background color and behavior.
+
 ## 2.0.0
 
 1. Changed app name from “Source Player” to BeyondPlayer Pro, changed app icon.
