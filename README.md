@@ -24,6 +24,13 @@ See [Product Page](https://circleapps.co/) or [BeyondPlayer Wiki](https://github
 
 # Release Notes
 
+## 2.2.3
+
+1. Allow changing player and side pane subtitle font size.
+2. New option to change player subtitle color.
+3. New option to change player subtitle font family.
+4. Allow opening YouTube video from Chrome to BeyondPlayer Pro by a Chrome Extension, install it from https://chrome.google.com/webstore/detail/open-in-beyondplayer-pro/cbcaadcmbfdbanoggkblcjjcfkgmigkh
+
 ## 2.1.2
 
 1. Export/Import Word Book.
