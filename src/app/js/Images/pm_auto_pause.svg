@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>macOS icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="macOS-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-2" transform="translate(141.000000, 457.000000)" fill="#FFFFFF">
+            <rect id="Rectangle-Copy" x="256" y="0" width="192" height="70"></rect>
+            <rect id="Rectangle-Copy-4" x="512" y="0" width="192" height="70"></rect>
+            <rect id="Rectangle-Copy-2" x="0" y="0" width="192" height="70"></rect>
+        </g>
+        <polygon id="Rectangle-Copy-3" fill="#FFFFFF" points="141 199 751.898438 199 751.898438 142.574219 884 273.640625 141 273.640625"></polygon>
+        <polygon id="Rectangle-Copy-9" fill="#FFFFFF" points="141 722 751.898438 722 751.898438 665.574219 884 796.640625 141 796.640625"></polygon>
+    </g>
+</svg>

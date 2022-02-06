@@ -1,0 +1,42 @@
+.byp-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+}
+
+.byp-toolbar-button {
+    width: 39px;
+    height: 100%;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: rgba(39, 39, 39, 0);
+    color: rgb(240, 240, 240);
+    padding: 0;
+}
+
+.byp-toolbar-button.byp-active {
+    background-color: rgba(19, 19, 19, 0.75);
+}
+
+.byp-icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+}
+
+.byp-anim {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+    from {
+        -webkit-transform: rotate(359deg);
+    }
+}

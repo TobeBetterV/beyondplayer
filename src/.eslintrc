@@ -1,0 +1,95 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": false
+    },
+    "extends": ["airbnb", "prettier"],
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "globals": {
+        "PRO_VERSION": "readonly"
+    },
+    "rules": {
+        "max-len": ["error", { "code": 150 }],
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "prefer-promise-reject-errors": ["off"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/prop-types": ["warn"],
+        "no-return-assign": ["off"],
+        "import/prefer-default-export": "off",
+        "no-shadow": "warn",
+        "consistent-return": "warn",
+        "no-restricted-syntax": "off",
+        "no-await-in-loop": "off",
+        "react/require-default-props": "off",
+        "no-underscore-dangle": ["warn", { "allowAfterThis": false }],
+        "react/prefer-stateless-function": "warn",
+        "global-require": "off",
+        "no-unused-expressions": [
+            "warn",
+            {
+                "allowShortCircuit": false,
+                "allowTernary": false
+            }
+        ],
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "jsx-a11y/anchor-is-valid": "off",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "react/jsx-indent": ["error", 4],
+        "jsx-quotes": ["error", "prefer-double"],
+        "comma-dangle": ["error", "never"],
+        "func-style": "off",
+        "react/forbid-prop-types": [
+            "error",
+            {
+                "forbid": ["any"]
+            }
+        ],
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/role-has-required-aria-props": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-props-no-spreading": "warn",
+        "react/destructuring-assignment": "warn",
+        "react/jsx-boolean-value": "warn",
+        "react/jsx-closing-bracket-location": "off",
+        "react/jsx-curly-spacing": "warn",
+        "react/jsx-indent-props": "off",
+        "react/jsx-key": "warn",
+        "react/jsx-max-props-per-line": [1, { "maximum": 3 }],
+        "react/jsx-no-bind": "off",
+        "react/jsx-no-literals": "off",
+        "react/jsx-pascal-case": "warn",
+        "import/extensions": "off",
+        "react/jsx-sort-prop-types": "off",
+        "react/jsx-sort-props": "off",
+        "react/jsx-wrap-multilines": "error",
+        "react/no-multi-comp": "off",
+        "react/no-set-state": "off",
+        "react/prefer-es6-class": "warn",
+        "react/self-closing-comp": "warn",
+
+        "react/sort-comp": [
+            "error",
+            {
+                "order": ["static-variables", "static-methods", "lifecycle", "render", "everything-else"]
+            }
+        ],
+        "react/sort-prop-types": "warn"
+    },
+    "settings": {
+        "import/core-modules": ["electron"]
+    }
+}

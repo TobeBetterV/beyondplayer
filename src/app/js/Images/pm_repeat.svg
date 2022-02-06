@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>macOS icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="macOS-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" x="141" y="177" width="743" height="70"></rect>
+        <rect id="Rectangle-Copy" fill="#FFFFFF" x="141" y="762" width="743" height="70"></rect>
+        <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="141" y="378" width="345" height="70"></rect>
+        <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="585" y="378" width="299" height="70"></rect>
+        <rect id="Rectangle-Copy-3" fill="#FFFFFF" x="141" y="568" width="743" height="70"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="141" y="378" width="70" height="260"></rect>
+        <rect id="Rectangle-Copy-4" fill="#FFFFFF" x="814" y="378" width="70" height="260"></rect>
+        <polygon id="Rectangle" fill="#FFFFFF" transform="translate(449.994949, 412.994949) rotate(-135.000000) translate(-449.994949, -412.994949) " points="379.994949 342.994949 519.994949 482.994949 379.994949 482.994949"></polygon>
+    </g>
+</svg>

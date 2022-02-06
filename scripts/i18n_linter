@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const assert = require("assert").strict;
+const { difference, keys } = require("../src/node_modules/lodash/lodash");
+const en = require("../src/app/i18n/en.json");
+const codes = ['uk', 'zh-CN', 'zh-TW', 'ru'];
+
+codes.forEach(code=>{
+    const translation = require(`../src/app/i18n/${code}.json`);
+    const diff = difference(keys(en), keys(translation));
+
+    assert(diff.length === 0, `en i18n file has more keys than the ${code} one, keys = ${diff}`);
+})

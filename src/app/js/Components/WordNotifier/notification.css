@@ -1,0 +1,134 @@
+.notification-container-root {
+    position: absolute;
+    top: 55px;
+    bottom: 18%;
+    right: 5px;
+    z-index: 8000;
+    margin-bottom: -20px;
+    width: 25%;
+    max-width: 350px;
+    overflow-y: hidden;
+}
+
+.notification-container {
+    position: absolute;
+    top: 0;
+    /*
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-content: flex-start;
+  */
+    width: 100%;
+    pointer-events: auto;
+}
+
+.notification-default {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.notification-title {
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+}
+.notification-message {
+    color: rgb(0, 0, 0);
+}
+
+.notification-close span {
+    color: rgb(0, 0, 0);
+}
+
+.notification-item-root,
+.notification-title,
+.notification-message,
+.notification-item {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification-item {
+    position: relative;
+}
+
+.notification-toolbar {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: rgb(3, 3, 3);
+    visibility: hidden;
+}
+.notification-toolbar span {
+    padding-left: 5px;
+}
+
+.notification-item:hover .notification-toolbar {
+    visibility: visible;
+}
+
+.nc-center {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 8000;
+    pointer-events: all;
+}
+
+.nc-box {
+    left: -50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.notification-item {
+    display: flex;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    /*box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.2);*/
+}
+
+.notification-container-top-right .notification-item-root,
+.notification-container-bottom-right .notification-item-root {
+    margin-left: auto;
+}
+
+.notification-container-top-left .notification-item-root,
+.notification-container-bottom-left .notification-item-root {
+    margin-right: auto;
+}
+
+.notification-item-root {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.notification-title {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.notification-message {
+    max-width: calc(100% - 15px);
+    line-height: 150%;
+    word-wrap: break-word;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.notification-invisible {
+    visibility: hidden;
+    max-width: 375px;
+}
+
+.notification-visible {
+    visibility: visible;
+}
+
+.notification-content {
+    padding: 8px 15px;
+    display: inline-block;
+    width: 100%;
+}

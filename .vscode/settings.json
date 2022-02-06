@@ -1,0 +1,6 @@
+{
+    "eslint.workingDirectories": [{ "directory": "./src", "!cwd": true }],
+    "eslint.nodePath": "./src/node_modules",
+    "jest.rootPath": "src",
+    "debug.javascript.usePreview": false // TODO: will be removed after we upgrade to Electron 6.x or newer
+}
