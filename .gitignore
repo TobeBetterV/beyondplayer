@@ -1,0 +1,13 @@
+app/build
+src/app/build
+src/node_modules
+art/*
+release-builds
+mas-builds/
+test/*
+video/*
+build/*
+src/app/main_packed.js
+bundle_report.html
+src/app/main_packed.js
+.DS_Store

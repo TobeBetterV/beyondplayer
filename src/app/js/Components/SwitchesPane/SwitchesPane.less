@@ -1,0 +1,35 @@
+@import '../PopupPane.less';
+
+.byp-switches-pane {
+    .popup-pane;
+    height: 125px;
+    left: 89px;
+    width: 290px;
+}
+
+.byp-switches-pane:after,
+.byp-switches-pane:before {
+    .popup-pane-after-and-before(40%);
+}
+
+.byp-switches-pane:after {
+    .popup-pane-after;
+}
+
+.byp-switches-pane:before {
+    .popup-pane-before;
+}
+
+.byp-switches-pane > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+}
+
+.byp-switches-pane-prefix {
+    display: inline-block;
+    width: 220px;
+    padding-right: 15px;
+    text-align: left;
+}

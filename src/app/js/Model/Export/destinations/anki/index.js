@@ -1,0 +1,1 @@
+export { AnkiFileDestination } from './AnkiFileDestination';

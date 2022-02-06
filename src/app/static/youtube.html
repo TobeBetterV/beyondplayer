@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+            webview {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="player" style="width: 100%; height: 100%; margin: 0; padding: 0"></div>
+        <script>
+            var tag = document.createElement('script');
+            tag.src = 'https://www.youtube.com/iframe_api';
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+            var timer;
+            var closeSubtitleAndAdTimer;
+            var openSubtitleTimer;
+            var videoId;
+            var loaded = false;
+            var innerDoc;
+            var retryCount = 0;
+            var checkExistTimer;
+
+            var progressStarted = false;
+
+            function startProgress() {
+                progressStarted = true;
+
+                clearInterval(timer);
+                timer = setInterval(onProgress, 200);
+            }
+
+            function loadVideo(v) {
+                clearInterval(openSubtitleTimer);
+                clearInterval(closeSubtitleAndAdTimer);
+
+                loaded = false;
+                videoId = v;
+                player.loadVideoById(videoId, 0, 'large');
+                player.playVideo();
+                startProgress();
+            }
+
+            function hideByClass(clsName) {
+                var el = innerDoc.getElementsByClassName(clsName)[0];
+                if (el) {
+                    el.style.visibility = 'hidden';
+                }
+            }
+
+            function hidePauseOverlay() {
+                hideByClass('ytp-pause-overlay');
+                hideByClass('ytp-show-watch-later-title');
+                hideByClass('ytp-chrome-top');
+                hideByClass('ytp-chrome-bottom');
+            }
+
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    width: '100%',
+                    height: '100%',
+                    videoId: videoId,
+                    host: 'https://www.youtube.com',
+                    playerVars: {
+                        cc_load_policy: 1,
+                        controls: 1,
+                        hl: 'en',
+                        cc_lang_pref: 'en',
+                        showinfo: 0,
+                        modestbranding: 1,
+                        enablejsapi: 1,
+                        rel: 0
+                    },
+                    events: {
+                        onReady: onPlayerReady,
+                        onStateChange: onPlayerStateChange
+                    }
+                });
+            }
+
+            function onPlayerReady(event) {
+                var ifr = document.getElementsByTagName('IFRAME')[0];
+                innerDoc = ifr.contentDocument || ifr.contentWindow.document;
+
+                //event.target.playVideo();
+                sendToHost('onPlayerReady', event.target);
+                sendToHost('onVideoTitle', event.target.getVideoData().title);
+
+                hideByClass('ytp-pause-overlay');
+                hideByClass('ad-container');
+
+                ifr.contentWindow.ondragover = ev => {
+                    ev.preventDefault();
+                    ev.stopPropagation();
+                };
+
+                ifr.contentWindow.ondrop = ev => {
+                    ev.preventDefault();
+                    ev.stopPropagation();
+
+                    var url = ev.dataTransfer.getData('URL');
+                    if (url) {
+                        sendToHost('onDropUrl', url);
+                    } else {
+                        var file = ev.dataTransfer.files[0].path;
+                        sendToHost('onDropFile', file);
+                    }
+                };
+            }
+
+            function onProgress() {
+                sendToHost('onProgress', player.getCurrentTime());
+            }
+
+            function checkSubtitleAndAd() {
+                clearInterval(openSubtitleTimer);
+                clearInterval(closeSubtitleAndAdTimer);
+                closeSubtitleAndAdTimer = setInterval(onCloseSubtitleAndAd, 1000);
+            }
+
+            function onCloseSubtitleAndAd() {
+                var adContainer = innerDoc.getElementsByClassName('ad-container')[0];
+                if (!adContainer) adContainer = innerDoc.getElementsByClassName('ytp-ad-module')[0];
+                if (adContainer) {
+                    adContainer.style.visibility = 'hidden';
+                }
+                var button = innerDoc.getElementsByClassName('ytp-subtitles-button ytp-button')[0];
+                if (button) {
+                    if (button.getAttribute('aria-pressed') == 'true') {
+                        //console.log("close subtitle");
+                        button.click();
+                    }
+                }
+            }
+
+            function openSubtitle() {
+                clearInterval(openSubtitleTimer);
+                openSubtitleTimer = setInterval(onOpenSubtitle, 300);
+            }
+
+            function onOpenSubtitle() {
+                var button = innerDoc.getElementsByClassName('ytp-subtitles-button ytp-button')[0];
+                if (button) {
+                    if (button.getAttribute('aria-pressed') != 'true') {
+                        //console.log("open subtitle");
+                        button.click();
+                    }
+                }
+            }
+
+            function checkError() {
+                var error = innerDoc.getElementsByClassName('ytp-error')[0];
+                if (error) {
+                    sendToHost('onError', true);
+                }
+            }
+
+            function checkAndHideControls() {
+                clearInterval(checkExistTimer);
+                checkExistTimer = setInterval(() => {
+                    if (innerDoc.getElementsByClassName('ytp-chrome-bottom').length) {
+                        clearInterval(checkExistTimer);
+                        setTimeout(() => hideByClass('ytp-chrome-bottom'), 300);
+                        sendToHost('onControlsReady', true);
+                    }
+                    retryCount = retryCount + 1;
+                    if (retryCount > 20) {
+                        clearInterval(checkExistTimer);
+                    }
+                }, 300);
+            }
+
+            function onPlayerStateChange(event) {
+                switch (event.data) {
+                    case YT.PlayerState.PLAYING:
+                        {
+                            if (!loaded) {
+                                loaded = true;
+                                sendToHost('onVideoTitle', event.target.getVideoData().title);
+                            }
+                            sendToHost('onPlayerPause', false);
+                            sendToHost('onDuration', event.target.getDuration());
+
+                            if (progressStarted) {
+                                clearInterval(timer);
+                                timer = setInterval(onProgress, 200);
+                            }
+                        }
+                        break;
+                    case YT.PlayerState.PAUSED:
+                        {
+                            sendToHost('onPlayerPause', true);
+                            clearInterval(timer);
+                            hidePauseOverlay();
+                        }
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
