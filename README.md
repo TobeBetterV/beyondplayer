@@ -20,6 +20,44 @@ See [Product Page](https://circleapps.co/) or [BeyondPlayer Wiki](https://github
 
 ------
 
+# Install
+```
+make sure you have nodejs (12.x) and yarn installed.
+cd scripts
+./install_mpvjs.sh
+```
+
+# Debug
+
+```
+cd src
+npm run dev
+```
+Then Press F5 in Visual Studio Code
+
+# Build
+
+## Dev Build
+
+```
+cd scripts
+./build_dev.sh   
+```
+
+## Lite Version
+
+```
+cd scripts
+./build_lite.sh
+```
+
+## Pro Version
+
+```
+cd scripts
+./build_pro.sh
+```
+
 
 
 # Release Notes
