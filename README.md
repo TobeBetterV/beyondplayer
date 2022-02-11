@@ -14,6 +14,8 @@ What makes it unique is its dedicated features for English study, such as:
 
 See [Product Page](https://circleapps.co/) or [BeyondPlayer Wiki](https://github.com/circleapps/beyondplayer/wiki) for more about this app.
 
+For the moment, it supports MacOS only, but I hope it will support Windows soon.
+
 ---
 
 # Install
