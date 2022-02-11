@@ -1,7 +1,6 @@
-![BeyondPlayer](https://circleapps.co/img/screenshots/popup.png)
 
 
-BeyondPlayer (originally called Source Player) is a video player for English learner. It supports almost all common video types and playback functionalities.
+BeyondPlayer (originally called Source Player) is a open source video player for English learner. It supports almost all common video types and playback functionalities.
 
 What makes it unique is its dedicated features for English study, such as:
 
