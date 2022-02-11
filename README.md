@@ -1,7 +1,6 @@
-![BeyondPlayer](https://circleapps.co/img/screenshots/popup.png)
 
 
-BeyondPlayer (originally called Source Player) is a video player for English learner. It supports almost all common video types and playback functionalities.
+BeyondPlayer (originally called Source Player) is a open source video player for English learner. It supports almost all common video types and playback functionalities.
 
 What makes it unique is its dedicated features for English study, such as:
 
@@ -43,21 +42,6 @@ Then Press F5 in Visual Studio Code
 cd scripts
 ./build_dev.sh   
 ```
-
-## Lite Version
-
-```
-cd scripts
-./build_lite.sh
-```
-
-## Pro Version
-
-```
-cd scripts
-./build_pro.sh
-```
-
 
 
 # Release Notes
