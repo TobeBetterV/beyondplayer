@@ -43,21 +43,6 @@ cd scripts
 ./build_dev.sh   
 ```
 
-## Lite Version
-
-```
-cd scripts
-./build_lite.sh
-```
-
-## Pro Version
-
-```
-cd scripts
-./build_pro.sh
-```
-
-
 
 # Release Notes
 
