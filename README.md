@@ -50,6 +50,8 @@ cd {PROJECT_ROOT}/scripts
 ./build_dev.sh
 ```
 
+If everything goes as planned, you will find the dev build under {PROJECT_ROOT}/build.
+
 ---
 
 # License
