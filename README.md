@@ -21,10 +21,11 @@ For the moment, it supports MacOS only, but I hope it will support Windows soon.
 
 ---
 
-# Install
+# Install dependencies
 
 ```
-make sure you have nodejs (12.x) and yarn installed.
+# Before installing the dependencies, make sure you have nodejs (12.x), yarn, xcode installed.
+
 cd {PROJECT_ROOT}/scripts
 ./install_mpvjs.sh
 ```
@@ -43,6 +44,8 @@ Then Press F5 in Visual Studio Code
 ## Dev Build
 
 ```
+# Before building it, make sure you have electron-packager installed globally (by npm install electron-packager -g)
+
 cd {PROJECT_ROOT}/scripts
 ./build_dev.sh
 ```
